@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><style>:where(img){height:auto}</style>
+    <meta charset="UTF-8">
+    <meta content="width=device-width" name="viewport">
+    <link href="/favicon.svg" rel="icon" type="image/svg+xml">
+    <link href="https://astro-paper.pages.dev/posts/how-to-connect-astro-paper-blog-with-forestry-cms/" rel="canonical">
+    <meta content="Astro v2.3.4" name="generator">
+
+    <!-- General Meta Tags -->
+    <title>How to connect AstroPaper blog with Forestry CMS</title>
+    <meta content="How to connect AstroPaper blog with Forestry CMS" name="title">
+    <meta content="Step by step process of connecting Astro-Paper blog theme with Forestry Headless CMS." name="description">
+    <meta content="Sat Naing" name="author">
+
+    <!-- Open Graph / Facebook -->
+    <meta content="How to connect AstroPaper blog with Forestry CMS" property="og:title">
+    <meta content="Step by step process of connecting Astro-Paper blog theme with Forestry Headless CMS." property="og:description">
+    <meta content="https://astro-paper.pages.dev/posts/how-to-connect-astro-paper-blog-with-forestry-cms/" property="og:url">
+    <meta content="https://res.cloudinary.com/noezectz/v1663745737/astro-paper/astropaper-x-forestry-og_kqfwp0.png" property="og:image">
+
+    <!-- Twitter -->
+    <meta content="summary_large_image" property="twitter:card">
+    <meta content="https://astro-paper.pages.dev/posts/how-to-connect-astro-paper-blog-with-forestry-cms/" property="twitter:url">
+    <meta content="How to connect AstroPaper blog with Forestry CMS" property="twitter:title">
+    <meta content="Step by step process of connecting Astro-Paper blog theme with Forestry Headless CMS." property="twitter:description">
+    <meta content="https://res.cloudinary.com/noezectz/v1663745737/astro-paper/astropaper-x-forestry-og_kqfwp0.png" property="twitter:image">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+    
+
+  <link href="/_astro/index.c7111d64.css" rel="stylesheet">
+<link href="/_astro/_slug_.41a32359.css" rel="stylesheet">
+<link href="/_astro/_slug_.ed7ea365.css" rel="stylesheet">
+<link href="/_astro/_slug_.30802cbe.css" rel="stylesheet">
+<link href="/_astro/_slug_.cfdc15d4.css" rel="stylesheet"></head>
+
+  <body class="m-8 px-16">
+    <style>astro-island,astro-slot{display:contents}</style><script>var l;(self.Astro=self.Astro||{}).only=t=>{(async()=>await (await t())())()},window.dispatchEvent(new Event("astro:only"));{let t={0:t=>t,1:t=>JSON.parse(t,e),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,e)),5:t=>new Set(JSON.parse(t,e)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},e=(e,r)=>{if(""===e||!Array.isArray(r))return r;let[s,i]=r;return s in t?t[s](i):void 0};customElements.get("astro-island")||customElements.define("astro-island",((l=class extends HTMLElement{constructor(){super(...arguments),this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;let t=this.querySelectorAll("astro-slot"),r={},s=this.querySelectorAll("template[data-astro-template]");for(let t of s){let e=t.closest(this.tagName);e&&e.isSameNode(this)&&(r[t.getAttribute("data-astro-template")||"default"]=t.innerHTML,t.remove())}for(let e of t){let t=e.closest(this.tagName);t&&t.isSameNode(this)&&(r[e.getAttribute("name")||"default"]=e.innerHTML)}let i=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),e):{};this.hydrator(this)(this.Component,i,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((t,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let t=this.getAttribute("before-hydration-url");t&&await import(t),this.start()}start(){let t=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(void 0===Astro[e]){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{let t=this.getAttribute("renderer-url"),[e,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),t?import(t):()=>()=>{}]),s=this.getAttribute("component-export")||"default";if(s.includes("."))for(let t of(this.Component=e,s.split(".")))this.Component=this.Component[t];else this.Component=e[s];return this.hydrator=r,this.hydrate},t,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}}).observedAttributes=["props"],l))}</script><astro-island client="only" component-export="default" component-url="/_astro/Header.6f770060.js" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:&quot;svelte&quot;}" props="{}" renderer-url="/_astro/client.c4e17359.js" ssr uid="Z2wMduw"></astro-island>
+    <div class="max-w-3xl mx-auto px-4">
+  <hr aria-hidden="true" class="border-skin-line">
+</div>
+    <nav aria-label="breadcrumb" class="astro-ILHXCYM7 breadcrumb">
+  <ul class="astro-ILHXCYM7">
+    <li class="astro-ILHXCYM7">
+      <a href="/" class="astro-ILHXCYM7">Home</a>
+      <span class="astro-ILHXCYM7" aria-hidden="true">&#62;</span>
+    </li>
+    <li class="astro-ILHXCYM7">
+            <span class="astro-ILHXCYM7 capitalize" aria-current="page">
+              
+              Posts (page how-to-connect-astro-paper-blog-with-forestry-cms)
+            </span>
+          </li>
+  </ul>
+</nav>
+    
+  <div class="astro-YZ2G2V77 flex justify-start max-w-3xl mx-auto px-2 w-full">
+    <button class="astro-YZ2G2V77 flex focus-outline hover:opacity-75 mb-2 mt-8" onclick="history.back()">
+      <svg class="astro-YZ2G2V77" xmlns="http://www.w3.org/2000/svg"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" class="astro-YZ2G2V77"/>
+      </svg><span class="astro-YZ2G2V77">Go back</span>
+    </button>
+  </div>
+  <main class="astro-YZ2G2V77" id="main-content">
+    <h1 class="astro-YZ2G2V77 post-title">How to connect AstroPaper blog with Forestry CMS</h1>
+    <div class="astro-YZ2G2V77 flex items-center my-2 opacity-80 space-x-2"><svg class="inline-block fill-skin-base h-6 scale-100 w-6" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"/><path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"/></svg><span class="sr-only">Posted on:</span><span class="italic text-base">September 21, 2022<span aria-hidden="true"> | </span><span class="sr-only"> at </span>12:17 AM</span></div>
+    <article class="astro-YZ2G2V77 max-w-3xl mx-auto mt-8 prose" id="article" role="article">
+      <blockquote>
+<p>Important!!! Forestry is going to be discontinued on April 22nd, 2023. You can <a href="https://forestry.io/blog/forestry.io-end-of-life/">read their announcement</a> for more info.</p>
+</blockquote>
+<p>In this article, I will explain step by step process of connecting AstroPaper theme with the Forestry headless CMS. So, let’s get started 🎉</p>
+<h2 id="table-of-contents">Table of contents</h2>
+<p></p><details><summary>Open Table of contents</summary><p></p>
+<ul>
+<li>
+<p><a href="#what-is-forestry">What is Forestry?</a></p>
+</li>
+<li>
+<p><a href="#login--register-an-account-at-forestryio">Login / Register an account at Forestry.io</a></p>
+</li>
+<li>
+<p><a href="#import-astropaper-site-repository">Import AstroPaper site (repository)</a></p>
+<ul>
+<li><a href="#add-site">Add Site</a></li>
+<li><a href="#select-ssg">Select SSG</a></li>
+<li><a href="#select-git-provider">Select Git Provider</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#set-up-sidebar">Set up Sidebar</a></p>
+</li>
+<li>
+<p><a href="#set-up-media-import">Set up Media Import</a></p>
+</li>
+<li>
+<p><a href="#set-up-front-matter-template">Set up Front matter template</a></p>
+</li>
+<li>
+<p><a href="#conclusion">Conclusion</a></p>
+</li>
+</ul>
+<p></p></details><p></p>
+<h2 id="what-is-forestry">What is Forestry?</h2>
+<p><a href="https://forestry.io/" title="Forestry Website">Forestry</a> is a git-based headless CMS and we can manage our markdown contents easily by using that. Although it is not an open-sourced CMS, it has a good free plan by which we can import up to 3 sites (3 repositories). In this article, I’ll demonstrate how we can use Forestry as git-based CMS of our AstroPaper blog theme.</p>
+<h2 id="login--register-an-account-at-forestryio">Login / Register an account at Forestry.io</h2>
+<p>First of all, you have to create an account at <a href="https://app.forestry.io/login" title="Forestry Login Page">Forestry website</a>. I usually sign up with my Github account.</p>
+<p><img alt="Forestry Login page" decoding="async" src="https://res.cloudinary.com/noezectz/v1663739096/astro-paper/Forestry-io_hk5yzv.png" fetchpriority="high"></p>
+<h2 id="import-astropaper-site-repository">Import AstroPaper site (repository)</h2>
+<p>This part is importing the repository to Forestry and a little bit of set up process.</p>
+<h3 id="add-site">Add Site</h3>
+<p>After logging in/signing up an account, import your AstroPaper site by clicking “Add Site” button.</p>
+<p><img alt="Forestry &#x27;My sites&#x27; page" decoding="async" src="https://res.cloudinary.com/noezectz/v1663739752/astro-paper/Forestry-io_1_z1bdyd.png" fetchpriority="high"></p>
+<h3 id="select-ssg">Select SSG</h3>
+<p>In this case, just choose “Others”</p>
+<p><img alt="Selecting &#x27;Others&#x27; as a site generator" decoding="async" src="https://res.cloudinary.com/noezectz/v1663740872/astro-paper/Forestry-io_2_blrrw2.png" fetchpriority="high"></p>
+<h3 id="select-git-provider">Select Git Provider</h3>
+<p>My git provider is Github and I assume yours is the same. So, choose “Github”.</p>
+<p><img alt="Selecting Github as a git provider" decoding="async" src="https://res.cloudinary.com/noezectz/v1663740922/astro-paper/Forestry-io_3_pj1v8v.png" fetchpriority="high"></p>
+<p>After this, the process of importing site (repo) is done.</p>
+<h2 id="set-up-sidebar">Set up Sidebar</h2>
+<p>The next phase after importing site is setting up sidebar menu. You can add many sidebar menu as you want. However, I’ll only add one sidebar menu in this case.</p>
+<p>Navigate to “Finish setup process” > “Set up sidebar” and click “Configure sitebar”</p>
+<p><img alt="Forestry welcome screen" decoding="async" src="https://res.cloudinary.com/noezectz/v1663740974/astro-paper/forestry-io_4_j35uk9.png" fetchpriority="high"></p>
+<p>Then, click “Add Section” button.</p>
+<p><img alt="Clicking &#x27;Add Section&#x27; for sidebar" decoding="async" src="https://res.cloudinary.com/noezectz/v1663741011/astro-paper/forestry-io_5_sxtgvx.png" fetchpriority="high"></p>
+<p>After that, choose DIRECTORY for the Section Type.</p>
+<p><img alt="Choosing &#x27;DIRECTORY&#x27; as the Selection Type" decoding="async" src="https://res.cloudinary.com/noezectz/v1663741052/astro-paper/forestry-io_6_lddmkx.png" fetchpriority="high"></p>
+<p>Then, configure the directory section. You can follow along with my setup.</p>
+<p><img alt="Configuring the Directory Section" decoding="async" src="https://res.cloudinary.com/noezectz/v1663741105/astro-paper/forestry-io_7_jkwgi1.png" fetchpriority="high"></p>
+<p>After this step, you should see a sidebar menu “Blog Posts” and some blog posts.</p>
+<h2 id="set-up-media-import">Set up Media Import</h2>
+<p>In Forestry CMS, you can set up different options for media (aka assets) such as Cloudinary, git commit media etc. I usually store my assets in <a href="https://cloudinary.com/">Cloudinary</a>. To set up media import, go to Settings > Media. Then select your image storage provider. (I chose Cloudinary).</p>
+<p><img alt="Setting up &#x27;Cloudinary&#x27; as the media import" decoding="async" src="https://res.cloudinary.com/noezectz/v1663741636/astro-paper/forestry-io-media-import_1_f8i4lm.png" loading="lazy"></p>
+<p>You can see details of Forestry Cloudinary setup at <a href="https://forestry.io/docs/media/cloudinary/">Forestry documentation</a>.</p>
+<h2 id="set-up-front-matter-template">Set up Front matter template</h2>
+<p>After setting everything up, you can set up front matter template for your future blog post. To set up front matter template, navigate to “Front matter” menu on the sidebar.</p>
+<p>Then, click “Add Template” button at the top right corner.</p>
+<p><img alt="Front Matter Templates page" decoding="async" src="https://res.cloudinary.com/noezectz/v1663742060/astro-paper/forestry-io-frontmatter_yskfvn.png" loading="lazy"></p>
+<p>Select new template based on existing document.</p>
+<p><img alt="Creating new template based on existing document" decoding="async" src="https://res.cloudinary.com/noezectz/v1663742179/astro-paper/forestry-io-existing-doc_bwcb9q.png" loading="lazy"></p>
+<p>Then, add template name and choose one of my document page as template.</p>
+<p>As the final setup, make some adjustment in the front matter field settings.</p>
+<p><img alt="Making some adjustment in a front matter field setting" decoding="async" src="https://res.cloudinary.com/noezectz/v1663742450/astro-paper/forestry-io-fm-config_jqmgwz.png" loading="lazy"></p>
+<p>Here are some adjustments you have to make.</p>
+<p><strong><em>title</em></strong></p>
+<ul>
+<li>Validation => REQUIRED => true</li>
+</ul>
+<p><strong><em>author</em></strong></p>
+<ul>
+<li>Default => your name</li>
+</ul>
+<p><strong><em>datetime</em></strong></p>
+<ul>
+<li>Default => USE “NOW” AS DEFAULT</li>
+</ul>
+<p><strong><em>description</em></strong></p>
+<ul>
+<li>Validation => REQUIRED => true</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>You can now post your articles and write whatever you want.</p>
+    </article>
+
+    <ul class="astro-YZ2G2V77 tags-container">
+      <li class="astro-BLWJYJPT inline-block my-1 underline-offset-4">
+  <a href="/tags/docs" class="astro-BLWJYJPT group pr-2 text-sm">
+    <svg class="astro-BLWJYJPT scale-75" xmlns="http://www.w3.org/2000/svg"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z" class="astro-BLWJYJPT"/>
+    </svg>
+    &nbsp;<span class="astro-BLWJYJPT">docs</span>
+  </a>
+</li><li class="astro-BLWJYJPT inline-block my-1 underline-offset-4">
+  <a href="/tags/forestry-cms" class="astro-BLWJYJPT group pr-2 text-sm">
+    <svg class="astro-BLWJYJPT scale-75" xmlns="http://www.w3.org/2000/svg"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z" class="astro-BLWJYJPT"/>
+    </svg>
+    &nbsp;<span class="astro-BLWJYJPT">forestry-cms</span>
+  </a>
+</li><li class="astro-BLWJYJPT inline-block my-1 underline-offset-4">
+  <a href="/tags/astro-paper" class="astro-BLWJYJPT group pr-2 text-sm">
+    <svg class="astro-BLWJYJPT scale-75" xmlns="http://www.w3.org/2000/svg"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z" class="astro-BLWJYJPT"/>
+    </svg>
+    &nbsp;<span class="astro-BLWJYJPT">astro-paper</span>
+  </a>
+</li>
+    </ul>
+  </main>
+
+
+    <h1>How to connect AstroPaper blog with Forestry CMS</h1>
+    <p>Step by step process of connecting Astro-Paper blog theme with Forestry Headless CMS.</p>
+  </body>
+  <div class="max-w-3xl mx-auto px-4">
+  <hr aria-hidden="true" class="border-skin-line">
+</div>
+  <footer class="astro-SZ7XMLTE mt-auto">
+  <div class="max-w-3xl mx-auto px-0">
+  <hr aria-hidden="true" class="border-skin-line">
+</div>
+  <div class="astro-SZ7XMLTE footer-wrapper">
+    <div class="astro-UPU6FZXR flex social-icons">
+  <a href="https://github.com/satnaing/astro-paper" class="inline-block astro-5EUNQZKT astro-UPU6FZXR group link-button" tabindex="0" title=" AstroPaper on Github">
+  
+        <svg class="icon-tabler" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 0h24v24H0z" fill="none" stroke="none"/>
+    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/>
+  </svg>
+      
+</a><a href="https://github.com/satnaing/astro-paper" class="inline-block astro-5EUNQZKT astro-UPU6FZXR group link-button" tabindex="0" title="AstroPaper on Facebook">
+  
+        <svg class="icon-tabler" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 0h24v24H0z" fill="none" stroke="none"/>
+    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"/>
+  </svg>
+      
+</a><a href="https://github.com/satnaing/astro-paper" class="inline-block astro-5EUNQZKT astro-UPU6FZXR group link-button" tabindex="0" title="AstroPaper on Instagram">
+  
+        <svg class="icon-tabler" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 0h24v24H0z" fill="none" stroke="none"/>
+    <rect height="16" rx="4" width="16" x="4" y="4"/>
+    <circle cx="12" cy="12" r="3"/>
+    <line x1="16.5" x2="16.5" y1="7.5" y2="7.501"/>
+  </svg>
+      
+</a><a href="https://github.com/satnaing/astro-paper" class="inline-block astro-5EUNQZKT astro-UPU6FZXR group link-button" tabindex="0" title="AstroPaper on LinkedIn">
+  
+        <svg class="icon-tabler" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 0h24v24H0z" fill="none" stroke="none"/>
+    <rect height="16" rx="2" width="16" x="4" y="4"/>
+    <line x1="8" x2="8" y1="11" y2="16"/>
+    <line x1="8" x2="8" y1="8" y2="8.01"/>
+    <line x1="12" x2="12" y1="16" y2="11"/>
+    <path d="M16 16v-3a2 2 0 0 0 -4 0"/>
+  </svg>
+      
+</a>
+</div>
+    <div class="astro-SZ7XMLTE copyright-wrapper">
+      <span class="astro-SZ7XMLTE">Copyright &#169; 2023</span>
+      <span class="astro-SZ7XMLTE separator">&nbsp;|&nbsp;</span>
+      <span class="astro-SZ7XMLTE">All rights reserved.</span>
+    </div>
+  </div>
+</footer>  
+</html>

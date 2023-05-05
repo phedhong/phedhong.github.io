@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><style>:where(img){height:auto}</style>
+    <meta charset="UTF-8">
+    <meta content="width=device-width" name="viewport">
+    <link href="/favicon.svg" rel="icon" type="image/svg+xml">
+    <link href="https://astro-paper.pages.dev/posts/astro-paper-2/" rel="canonical">
+    <meta content="Astro v2.3.4" name="generator">
+
+    <!-- General Meta Tags -->
+    <title>AstroPaper 2.0</title>
+    <meta content="AstroPaper 2.0" name="title">
+    <meta content="AstroPaper with the enhancements of Astro v2. Type-safe markdown contents, bug fixes and better dev experience etc." name="description">
+    <meta content="Sat Naing" name="author">
+
+    <!-- Open Graph / Facebook -->
+    <meta content="AstroPaper 2.0" property="og:title">
+    <meta content="AstroPaper with the enhancements of Astro v2. Type-safe markdown contents, bug fixes and better dev experience etc." property="og:description">
+    <meta content="https://astro-paper.pages.dev/posts/astro-paper-2/" property="og:url">
+    <meta content="https://user-images.githubusercontent.com/53733092/215771435-25408246-2309-4f8b-a781-1f3d93bdf0ec.png" property="og:image">
+
+    <!-- Twitter -->
+    <meta content="summary_large_image" property="twitter:card">
+    <meta content="https://astro-paper.pages.dev/posts/astro-paper-2/" property="twitter:url">
+    <meta content="AstroPaper 2.0" property="twitter:title">
+    <meta content="AstroPaper with the enhancements of Astro v2. Type-safe markdown contents, bug fixes and better dev experience etc." property="twitter:description">
+    <meta content="https://user-images.githubusercontent.com/53733092/215771435-25408246-2309-4f8b-a781-1f3d93bdf0ec.png" property="twitter:image">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+    
+
+  <link href="/_astro/index.c7111d64.css" rel="stylesheet">
+<link href="/_astro/_slug_.41a32359.css" rel="stylesheet">
+<link href="/_astro/_slug_.ed7ea365.css" rel="stylesheet">
+<link href="/_astro/_slug_.30802cbe.css" rel="stylesheet">
+<link href="/_astro/_slug_.cfdc15d4.css" rel="stylesheet"></head>
+
+  <body class="m-8 px-16">
+    <style>astro-island,astro-slot{display:contents}</style><script>var l;(self.Astro=self.Astro||{}).only=t=>{(async()=>await (await t())())()},window.dispatchEvent(new Event("astro:only"));{let t={0:t=>t,1:t=>JSON.parse(t,e),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,e)),5:t=>new Set(JSON.parse(t,e)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},e=(e,r)=>{if(""===e||!Array.isArray(r))return r;let[s,i]=r;return s in t?t[s](i):void 0};customElements.get("astro-island")||customElements.define("astro-island",((l=class extends HTMLElement{constructor(){super(...arguments),this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;let t=this.querySelectorAll("astro-slot"),r={},s=this.querySelectorAll("template[data-astro-template]");for(let t of s){let e=t.closest(this.tagName);e&&e.isSameNode(this)&&(r[t.getAttribute("data-astro-template")||"default"]=t.innerHTML,t.remove())}for(let e of t){let t=e.closest(this.tagName);t&&t.isSameNode(this)&&(r[e.getAttribute("name")||"default"]=e.innerHTML)}let i=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),e):{};this.hydrator(this)(this.Component,i,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((t,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let t=this.getAttribute("before-hydration-url");t&&await import(t),this.start()}start(){let t=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(void 0===Astro[e]){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{let t=this.getAttribute("renderer-url"),[e,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),t?import(t):()=>()=>{}]),s=this.getAttribute("component-export")||"default";if(s.includes("."))for(let t of(this.Component=e,s.split(".")))this.Component=this.Component[t];else this.Component=e[s];return this.hydrator=r,this.hydrate},t,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}}).observedAttributes=["props"],l))}</script><astro-island client="only" component-export="default" component-url="/_astro/Header.6f770060.js" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:&quot;svelte&quot;}" props="{}" renderer-url="/_astro/client.c4e17359.js" ssr uid="Z2wMduw"></astro-island>
+    <div class="max-w-3xl mx-auto px-4">
+  <hr aria-hidden="true" class="border-skin-line">
+</div>
+    <nav aria-label="breadcrumb" class="astro-ILHXCYM7 breadcrumb">
+  <ul class="astro-ILHXCYM7">
+    <li class="astro-ILHXCYM7">
+      <a href="/" class="astro-ILHXCYM7">Home</a>
+      <span class="astro-ILHXCYM7" aria-hidden="true">&#62;</span>
+    </li>
+    <li class="astro-ILHXCYM7">
+            <span class="astro-ILHXCYM7 capitalize" aria-current="page">
+              
+              Posts (page astro-paper-2)
+            </span>
+          </li>
+  </ul>
+</nav>
+    
+  <div class="astro-YZ2G2V77 flex justify-start max-w-3xl mx-auto px-2 w-full">
+    <button class="astro-YZ2G2V77 flex focus-outline hover:opacity-75 mb-2 mt-8" onclick="history.back()">
+      <svg class="astro-YZ2G2V77" xmlns="http://www.w3.org/2000/svg"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" class="astro-YZ2G2V77"/>
+      </svg><span class="astro-YZ2G2V77">Go back</span>
+    </button>
+  </div>
+  <main class="astro-YZ2G2V77" id="main-content">
+    <h1 class="astro-YZ2G2V77 post-title">AstroPaper 2.0</h1>
+    <div class="astro-YZ2G2V77 flex items-center my-2 opacity-80 space-x-2"><svg class="inline-block fill-skin-base h-6 scale-100 w-6" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"/><path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"/></svg><span class="sr-only">Posted on:</span><span class="italic text-base">January 30, 2023<span aria-hidden="true"> | </span><span class="sr-only"> at </span>09:57 AM</span></div>
+    <article class="astro-YZ2G2V77 max-w-3xl mx-auto mt-8 prose" id="article" role="article">
+      <p>Astro 2.0 has been released with some cool features, breaking changes, DX improvements, better error overlay and so on. AstroPaper takes advantage of those cool features, especially Content Collections API.</p>
+<!-- ![Introducing AstroPaper 2.0](https://user-images.githubusercontent.com/53733092/215683840-dc2502f5-8c5a-44f0-a26c-4e7180455056.png) -->
+<p><img alt="Introducing AstroPaper 2.0" decoding="async" src="https://user-images.githubusercontent.com/53733092/215771435-25408246-2309-4f8b-a781-1f3d93bdf0ec.png" fetchpriority="high"></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<p></p><details><summary>Open Table of contents</summary><p></p>
+<ul>
+<li>
+<p><a href="#features--changes">Features &#x26; Changes</a></p>
+<ul>
+<li><a href="#type-safe-frontmatters-and-redefined-blog-schema">Type-safe Frontmatters and Redefined Blog Schema</a></li>
+<li><a href="#new-home-for-blog-contents">New Home for Blog contents</a></li>
+<li><a href="#new-fetch-api">New Fetch API</a></li>
+<li><a href="#modified-search-logic-for-better-search-result">Modified Search Logic for better Search Result</a></li>
+<li><a href="#renamed-frontmatter-properties">Renamed Frontmatter Properties</a></li>
+<li><a href="#default-tag-for-blog-post">Default Tag for blog post</a></li>
+<li><a href="#new-predefined-dark-color-scheme">New Predefined Dark Color Scheme</a></li>
+<li><a href="#automatic-class-sorting">Automatic Class Sorting</a></li>
+<li><a href="#updated-docs--readme">Updated Docs &#x26; README</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#bug-fixes">Bug Fixes</a></p>
+</li>
+</ul>
+<p></p></details><p></p>
+<h2 id="features--changes">Features &#x26; Changes</h2>
+<h3 id="type-safe-frontmatters-and-redefined-blog-schema">Type-safe Frontmatters and Redefined Blog Schema</h3>
+<p>Frontmatter of AstroPaper 2.0 markdown contents are now type-safe thanks to Astro’s Content Collections. Blog schema is defined inside the <code>src/content/_schemas.ts</code> file.</p>
+<h3 id="new-home-for-blog-contents">New Home for Blog contents</h3>
+<p>All the blog posts were moved from <code>src/contents</code> to <code>src/content/blog</code> directory.</p>
+<h3 id="new-fetch-api">New Fetch API</h3>
+<p>Contents are now fetched with <code>getCollection</code> function. No relative path to the content needs to be specified anymore.</p>
+<pre class="astro-code" is:raw style="white-space:pre-wrap;word-wrap:break-word;background-color:#282c34;overflow-x:auto"><code><span class="line"><span style="color:#7f848e">// old content fetching method</span></span>
+<span class="line"><span style="color:#56b6c2">-</span><span style="color:#abb2bf"> </span><span style="color:#c678dd">const</span><span style="color:#abb2bf"> </span><span style="color:#e5c07b">postImportResult</span><span style="color:#abb2bf"> </span><span style="color:#56b6c2">=</span><span style="color:#abb2bf"> </span><span style="color:#c678dd">import</span><span style="color:#abb2bf">.</span><span style="color:#e06c75">meta</span><span style="color:#abb2bf">.</span><span style="color:#61afef">glob</span><span style="color:#abb2bf">&#x3C;</span><span style="color:#e5c07b">MarkdownInstance</span><span style="color:#abb2bf">&#x3C;</span><span style="color:#e5c07b">Frontmatter</span><span style="color:#abb2bf">>>(</span></span>
+<span class="line"><span style="color:#abb2bf">  </span><span style="color:#98c379">"../contents/**/**/*.md"</span><span style="color:#abb2bf">,);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7f848e">// new content fetching method</span></span>
+<span class="line"><span style="color:#56b6c2">+</span><span style="color:#abb2bf"> </span><span style="color:#c678dd">const</span><span style="color:#abb2bf"> </span><span style="color:#e5c07b">postImportResult</span><span style="color:#abb2bf"> </span><span style="color:#56b6c2">=</span><span style="color:#abb2bf"> </span><span style="color:#c678dd">await</span><span style="color:#abb2bf"> </span><span style="color:#61afef">getCollection</span><span style="color:#abb2bf">(</span><span style="color:#98c379">"blog"</span><span style="color:#abb2bf">);</span></span></code></pre>
+<h3 id="modified-search-logic-for-better-search-result">Modified Search Logic for better Search Result</h3>
+<p>In the older version of AstroPaper, when someone search some article, the search criteria keys that will be searched are <code>title</code>, <code>description</code> and <code>headings</code> (heading means all the headings h1 ~ h6 of the blog post). In AstroPaper v2, only <code>title</code> and <code>description</code> will be searched as the user types.</p>
+<h3 id="renamed-frontmatter-properties">Renamed Frontmatter Properties</h3>
+<p>The following frontmatter properties are renamed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Old Names</th><th>New Names</th></tr></thead><tbody><tr><td>datetime</td><td>pubDatetime</td></tr><tr><td>slug</td><td>postSlug</td></tr></tbody></table>
+<h3 id="default-tag-for-blog-post">Default Tag for blog post</h3>
+<p>If a blog post doesn’t have any tag (in other words, frontmatter property <code>tags</code> is not specified), the default tag <code>others</code> will be used for that blog post. But you can set the default tag in the <code>/src/content/_schemas.ts</code> file.</p>
+<pre class="astro-code" is:raw style="white-space:pre-wrap;word-wrap:break-word;background-color:#282c34;overflow-x:auto"><code><span class="line"><span style="color:#7f848e">// src/contents/_schemas.ts</span></span>
+<span class="line"><span style="color:#c678dd">export</span><span style="color:#abb2bf"> </span><span style="color:#c678dd">const</span><span style="color:#abb2bf"> </span><span style="color:#e5c07b">blogSchema</span><span style="color:#abb2bf"> </span><span style="color:#56b6c2">=</span><span style="color:#abb2bf"> </span><span style="color:#e5c07b">z</span><span style="color:#abb2bf">.</span><span style="color:#61afef">object</span><span style="color:#abb2bf">({</span></span>
+<span class="line"><span style="color:#abb2bf">  </span><span style="color:#7f848e">// ---</span></span>
+<span class="line"><span style="color:#abb2bf">  </span><span style="color:#7f848e">// replace "others" with whatever you want</span></span>
+<span class="line"><span style="color:#abb2bf">  </span><span style="color:#e06c75">tags</span><span style="color:#abb2bf">: </span><span style="color:#e5c07b">z</span><span style="color:#abb2bf">.</span><span style="color:#61afef">array</span><span style="color:#abb2bf">(</span><span style="color:#e5c07b">z</span><span style="color:#abb2bf">.</span><span style="color:#61afef">string</span><span style="color:#abb2bf">()).</span><span style="color:#61afef">default</span><span style="color:#abb2bf">([</span><span style="color:#98c379">"others"</span><span style="color:#abb2bf">]),</span></span>
+<span class="line"><span style="color:#abb2bf">  </span><span style="color:#e06c75">ogImage</span><span style="color:#abb2bf">: </span><span style="color:#e5c07b">z</span><span style="color:#abb2bf">.</span><span style="color:#61afef">string</span><span style="color:#abb2bf">().</span><span style="color:#61afef">optional</span><span style="color:#abb2bf">(),</span></span>
+<span class="line"><span style="color:#abb2bf">  </span><span style="color:#e06c75">description</span><span style="color:#abb2bf">: </span><span style="color:#e5c07b">z</span><span style="color:#abb2bf">.</span><span style="color:#61afef">string</span><span style="color:#abb2bf">(),</span></span>
+<span class="line"><span style="color:#abb2bf">});</span></span></code></pre>
+<h3 id="new-predefined-dark-color-scheme">New Predefined Dark Color Scheme</h3>
+<p>AstroPaper v2 has a new dark color scheme (high contrast &#x26; low contrast) which is based on Astro’s dark logo. Check out <a href="https://astro-paper.pages.dev/posts/predefined-color-schemes#astro-dark">this link</a> for more info.</p>
+<p><img alt="New Predefined Dark Color Scheme" decoding="async" src="https://user-images.githubusercontent.com/53733092/215680520-59427bb0-f4cb-48c0-bccc-f182a428d72d.svg" loading="lazy"></p>
+<h3 id="automatic-class-sorting">Automatic Class Sorting</h3>
+<p>AstroPaper 2.0 includes automatic class sorting with <a href="https://tailwindcss.com/blog/automatic-class-sorting-with-prettier">TailwindCSS Prettier plugin</a></p>
+<h3 id="updated-docs--readme">Updated Docs &#x26; README</h3>
+<p>All the <a href="https://astro-paper.pages.dev/tags/docs/">#docs</a> blog posts and <a href="https://github.com/satnaing/astro-paper#readme">README</a> are updated for this AstroPaper v2.</p>
+<h2 id="bug-fixes">Bug Fixes</h2>
+<ul>
+<li>fix broken tags in the Blog Post page</li>
+<li>in a tag page, the last part of the breadcrumb is now updated to lower-case for consistency</li>
+<li>exclude draft posts in a tag page</li>
+<li>fix ‘onChange value not updating issue’ after a page reload</li>
+</ul>
+    </article>
+
+    <ul class="astro-YZ2G2V77 tags-container">
+      <li class="inline-block astro-BLWJYJPT my-1 underline-offset-4">
+  <a href="/tags/release" class="astro-BLWJYJPT group pr-2 text-sm">
+    <svg class="astro-BLWJYJPT scale-75" xmlns="http://www.w3.org/2000/svg"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z" class="astro-BLWJYJPT"/>
+    </svg>
+    &nbsp;<span class="astro-BLWJYJPT">release</span>
+  </a>
+</li>
+    </ul>
+  </main>
+
+
+    <h1>AstroPaper 2.0</h1>
+    <p>AstroPaper with the enhancements of Astro v2. Type-safe markdown contents, bug fixes and better dev experience etc.</p>
+  </body>
+  <div class="max-w-3xl mx-auto px-4">
+  <hr aria-hidden="true" class="border-skin-line">
+</div>
+  <footer class="astro-SZ7XMLTE mt-auto">
+  <div class="max-w-3xl mx-auto px-0">
+  <hr aria-hidden="true" class="border-skin-line">
+</div>
+  <div class="astro-SZ7XMLTE footer-wrapper">
+    <div class="astro-UPU6FZXR flex social-icons">
+  <a href="https://github.com/satnaing/astro-paper" class="inline-block astro-5EUNQZKT astro-UPU6FZXR group link-button" tabindex="0" title=" AstroPaper on Github">
+  
+        <svg class="icon-tabler" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 0h24v24H0z" fill="none" stroke="none"/>
+    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/>
+  </svg>
+      
+</a><a href="https://github.com/satnaing/astro-paper" class="inline-block astro-5EUNQZKT astro-UPU6FZXR group link-button" tabindex="0" title="AstroPaper on Facebook">
+  
+        <svg class="icon-tabler" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 0h24v24H0z" fill="none" stroke="none"/>
+    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"/>
+  </svg>
+      
+</a><a href="https://github.com/satnaing/astro-paper" class="inline-block astro-5EUNQZKT astro-UPU6FZXR group link-button" tabindex="0" title="AstroPaper on Instagram">
+  
+        <svg class="icon-tabler" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 0h24v24H0z" fill="none" stroke="none"/>
+    <rect height="16" rx="4" width="16" x="4" y="4"/>
+    <circle cx="12" cy="12" r="3"/>
+    <line x1="16.5" x2="16.5" y1="7.5" y2="7.501"/>
+  </svg>
+      
+</a><a href="https://github.com/satnaing/astro-paper" class="inline-block astro-5EUNQZKT astro-UPU6FZXR group link-button" tabindex="0" title="AstroPaper on LinkedIn">
+  
+        <svg class="icon-tabler" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 0h24v24H0z" fill="none" stroke="none"/>
+    <rect height="16" rx="2" width="16" x="4" y="4"/>
+    <line x1="8" x2="8" y1="11" y2="16"/>
+    <line x1="8" x2="8" y1="8" y2="8.01"/>
+    <line x1="12" x2="12" y1="16" y2="11"/>
+    <path d="M16 16v-3a2 2 0 0 0 -4 0"/>
+  </svg>
+      
+</a>
+</div>
+    <div class="astro-SZ7XMLTE copyright-wrapper">
+      <span class="astro-SZ7XMLTE">Copyright &#169; 2023</span>
+      <span class="astro-SZ7XMLTE separator">&nbsp;|&nbsp;</span>
+      <span class="astro-SZ7XMLTE">All rights reserved.</span>
+    </div>
+  </div>
+</footer>  
+</html>
